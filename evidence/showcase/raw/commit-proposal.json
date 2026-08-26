@@ -1,0 +1,54 @@
+{
+  "request": {
+    "proposal_id": "proposal-friday-campaign-launch-v1-g3-r1",
+    "expected_proposal_revision": 6
+  },
+  "result": {
+    "ok": true,
+    "data": {
+      "committed_operation_ids": [
+        "op-retime-campaign-copy",
+        "op-reassign-polish-visuals",
+        "op-retime-polish-visuals",
+        "op-retime-browser-qa"
+      ],
+      "rejected_operation_ids": [
+        "op-compress-browser-qa"
+      ],
+      "new_plan_revision": 2,
+      "final_finish_date": "2026-08-31",
+      "attribution": {
+        "proposalId": "proposal-friday-campaign-launch-v1-g3-r1",
+        "proposalRevision": 6,
+        "proposedBy": "visiting-agent",
+        "acceptedBy": "Alex",
+        "acceptedAt": "2026-08-26T12:00:00.000Z"
+      },
+      "already_applied": false
+    }
+  },
+  "idempotent_retry": {
+    "ok": true,
+    "data": {
+      "committed_operation_ids": [
+        "op-retime-campaign-copy",
+        "op-reassign-polish-visuals",
+        "op-retime-polish-visuals",
+        "op-retime-browser-qa"
+      ],
+      "rejected_operation_ids": [
+        "op-compress-browser-qa"
+      ],
+      "new_plan_revision": 2,
+      "final_finish_date": "2026-08-31",
+      "attribution": {
+        "proposalId": "proposal-friday-campaign-launch-v1-g3-r1",
+        "proposalRevision": 6,
+        "proposedBy": "visiting-agent",
+        "acceptedBy": "Alex",
+        "acceptedAt": "2026-08-26T12:00:00.000Z"
+      },
+      "already_applied": true
+    }
+  }
+}

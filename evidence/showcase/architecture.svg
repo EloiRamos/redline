@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">REDLINE browser-local architecture</title>
+  <desc id="desc">Visiting browser agent to three WebMCP tools to Alex reviewer tab to pure reducer and browser-local domain state to BroadcastChannel to Sam observer tab. There is no server, backend, or database.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 12 6 L 0 12 z" fill="#92a6bd"/></marker>
+    <style>
+      .bg { fill:#11161d } .panel { fill:#19212a;stroke:#3c4856;stroke-width:3 } .tools { fill:#1c2936;stroke:#f3bd68;stroke-width:3 } .alex { fill:#1b2631;stroke:#5c86c3;stroke-width:3 } .sam { fill:#211f2d;stroke:#9b7dc0;stroke-width:3 } .none { fill:#281f23;stroke:#f08383;stroke-width:6 } .line { stroke:#92a6bd;stroke-width:4;fill:none;marker-end:url(#arrow) } .title { font:700 31px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#edf1f5 } .label { font:700 22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#edf1f5 } .tool-label { font:700 16px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#edf1f5 } .body { font:500 19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#bbc4ce } .small { font:700 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f3bd68;letter-spacing:1px } .authority { font:800 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f3bd68;letter-spacing:.6px } .muted { font:600 17px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#93a5b7 } .deny { font:800 23px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#ffd0d0 }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="1200"/>
+  <text x="80" y="80" class="title">REDLINE — browser-local, same-origin proposal flow</text>
+  <text x="80" y="116" class="muted">The page owns review authority. The agent can propose; Alex decides what commits.</text>
+  <rect class="panel" x="80" y="180" rx="18" width="280" height="165"/>
+  <text x="112" y="234" class="label">Visiting browser agent</text><text x="112" y="274" class="body">Reads live view · stages changes</text>
+  <text x="112" y="310" class="authority">PROPOSAL ID + EXPECTED</text><text x="112" y="330" class="authority">REVISION ONLY</text>
+  <rect class="tools" x="430" y="160" rx="18" width="690" height="185"/>
+  <text x="465" y="207" class="small">WEBMCP TOOLS — EXACTLY THREE</text>
+  <rect x="465" y="236" width="195" height="56" rx="9" fill="#12191f" stroke="#48586a" stroke-width="2"/><text x="480" y="270" class="tool-label">get_current_view</text>
+  <rect x="670" y="236" width="195" height="56" rx="9" fill="#12191f" stroke="#48586a" stroke-width="2"/><text x="685" y="270" class="tool-label">propose_changes</text>
+  <rect x="875" y="236" width="210" height="56" rx="9" fill="#12191f" stroke="#48586a" stroke-width="2"/><text x="890" y="270" class="tool-label">commit_proposal</text>
+  <path class="line" d="M360 252 L408 252"/><path class="line" d="M600 345 C600 392 320 375 320 415"/>
+  <rect class="alex" x="80" y="435" rx="18" width="480" height="230"/>
+  <text x="115" y="486" class="small">ALEX REVIEWER TAB</text><text x="115" y="532" class="label">Alex's open page</text><text x="115" y="574" class="body">Live context · ghost proposal</text><text x="115" y="603" class="body">Per-operation review</text><text x="115" y="638" class="muted">Only Alex accepts or rejects</text>
+  <rect class="alex" x="640" y="435" rx="18" width="480" height="230"/>
+  <text x="675" y="486" class="small">PURE PAGE STATE</text><text x="675" y="532" class="label">Reducer + domain state</text><text x="675" y="574" class="body">Revisions · impact · attribution</text><text x="675" y="618" class="muted">Browser-local, deterministic state</text>
+  <path class="line" d="M560 550 L618 550"/><path class="line" d="M880 665 L880 740"/>
+  <rect class="panel" x="640" y="760" rx="18" width="480" height="125"/>
+  <text x="675" y="808" class="small">SAME ORIGIN</text><text x="675" y="850" class="label">BroadcastChannel · sanitized snapshots</text>
+  <path class="line" d="M880 885 L880 960"/>
+  <rect class="sam" x="640" y="980" rx="18" width="480" height="145"/>
+  <text x="675" y="1028" class="small">SAM OBSERVER TAB</text><text x="675" y="1070" class="label">Sam sees proposal + review</text><text x="675" y="1104" class="body">Read-only; never mutates shared state</text>
+  <rect class="none" x="80" y="760" rx="18" width="480" height="200"/>
+  <text x="115" y="814" class="deny">NO SERVER / BACKEND / DATABASE</text><text x="115" y="855" class="body">The proposal exists only in the open page.</text><text x="115" y="887" class="body">One static app · one origin · no network hop</text><text x="115" y="925" class="muted">Deliberate boundary, not missing infrastructure.</text>
+</svg>

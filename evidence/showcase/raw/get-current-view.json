@@ -1,0 +1,56 @@
+{
+  "ok": true,
+  "data": {
+    "viewer": {
+      "identity": "Alex",
+      "role": "reviewer"
+    },
+    "active_filter": "Launch",
+    "selected_task_ids": [
+      "task-lock-campaign-copy",
+      "task-polish-visuals",
+      "task-browser-qa",
+      "task-final-approval",
+      "task-publish-campaign"
+    ],
+    "visible_date_range": {
+      "start": "2026-08-21",
+      "end": "2026-08-31",
+      "label": "Aug 21–Aug 31"
+    },
+    "visible_tasks": [
+      {
+        "task_id": "task-lock-campaign-copy",
+        "title": "Lock campaign copy",
+        "owner": "Alex",
+        "date_label": "Aug 24 · 2 days"
+      },
+      {
+        "task_id": "task-polish-visuals",
+        "title": "Polish visuals",
+        "owner": "Casey",
+        "date_label": "Aug 26 · 2 days"
+      },
+      {
+        "task_id": "task-browser-qa",
+        "title": "Browser QA",
+        "owner": "Priya",
+        "date_label": "Aug 27 · 2 days"
+      },
+      {
+        "task_id": "task-final-approval",
+        "title": "Final approval",
+        "owner": "Sam",
+        "date_label": "Aug 28 · 1 day"
+      },
+      {
+        "task_id": "task-publish-campaign",
+        "title": "Publish campaign",
+        "owner": "Alex",
+        "date_label": "Aug 28 · 1 day"
+      }
+    ],
+    "plan_revision": 1,
+    "proposal_status": "none"
+  }
+}

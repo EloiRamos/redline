@@ -1,0 +1,65 @@
+{
+  "request": {
+    "expected_plan_revision": 1,
+    "operations": [
+      {
+        "type": "retime_task",
+        "operation_id": "op-retime-campaign-copy",
+        "rationale": "Move copy lock one working day earlier to create recovery room.",
+        "task_id": "task-lock-campaign-copy",
+        "new_start_date": "2026-08-21"
+      },
+      {
+        "type": "reassign_task",
+        "operation_id": "op-reassign-polish-visuals",
+        "rationale": "Move visual ownership away from Casey before Thursday.",
+        "task_id": "task-polish-visuals",
+        "new_owner": "Maya"
+      },
+      {
+        "type": "retime_task",
+        "operation_id": "op-retime-polish-visuals",
+        "rationale": "Run visual polish Tuesday and Wednesday before the absence.",
+        "task_id": "task-polish-visuals",
+        "new_start_date": "2026-08-25"
+      },
+      {
+        "type": "retime_task",
+        "operation_id": "op-retime-browser-qa",
+        "rationale": "Anchor Browser QA to start Thursday morning after visual polish.",
+        "task_id": "task-browser-qa",
+        "new_start_date": "2026-08-27"
+      },
+      {
+        "type": "change_duration",
+        "operation_id": "op-compress-browser-qa",
+        "rationale": "Compress Browser QA to one day to preserve the Friday launch.",
+        "task_id": "task-browser-qa",
+        "new_duration_days": 1
+      }
+    ]
+  },
+  "result": {
+    "ok": true,
+    "data": {
+      "proposal_id": "proposal-friday-campaign-launch-v1-g3-r1",
+      "proposal_revision": 1,
+      "staged_operation_ids": [
+        "op-retime-campaign-copy",
+        "op-reassign-polish-visuals",
+        "op-retime-polish-visuals",
+        "op-retime-browser-qa",
+        "op-compress-browser-qa"
+      ],
+      "committed_state_unchanged": true,
+      "projected_finish_date": "2026-08-28",
+      "finish_delta_days": 0,
+      "signals": [
+        {
+          "code": "BROWSER_QA_COMPRESSED",
+          "message": "Browser QA compressed from 2 days to 1 day."
+        }
+      ]
+    }
+  }
+}

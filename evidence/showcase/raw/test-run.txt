@@ -1,0 +1,13 @@
+> redline@0.0.0 test
+> vitest --passWithNoTests --run
+
+ RUN  v3.2.7
+
+ ✓ src/domain/impact.test.ts (3 tests)
+ ✓ src/domain/reducer.test.ts (13 tests)
+ ✓ src/sync/protocol.test.ts (5 tests)
+ ✓ src/domain/selectors.test.ts (3 tests)
+ ✓ src/webmcp/contracts.test.ts (7 tests)
+
+ Test Files  5 passed (5)
+      Tests  31 passed (31)
