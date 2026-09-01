@@ -4,7 +4,7 @@
 
 **Live Demo:** [https://redline-webmcp.netlify.app](https://redline-webmcp.netlify.app)
 
-**Watch Demo:** https://youtu.be/Vh9FmDS_6P8
+**Watch Demo:** https://youtu.be/keIdPptIV2o
 
 ![REDLINE: a shared agent proposal appears in Alex and Sam's views before the accepted subset commits.](public/README-hero.gif)
 
